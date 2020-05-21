@@ -1,0 +1,53 @@
+[
+  
+    {
+      "id":1,
+      "name": "Madhav Maheshwari",
+      "published_by": "Madhav Maheshwari",
+      "Published_0n": "15 May,2020",
+      "photo": "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
+      "pdf": "./pdfdata/Untitled 1.pdf"
+    },
+    
+    {
+        "id":2,
+        "name": "Amendment to the Indian Constitution",
+        "published_by": "Rishabh Mittal",
+        "Published_0n": "05 May,2020",
+        "photo": "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
+        "pdf": "./pdfdata/7.Amending_the_Constitution.pdf"
+      },
+      {
+        "id":3,
+        "name": "Re-availing the Input Tax Credit under GST",
+        "published_by": "Shikar Garg",
+        "Published_0n": "04 May,2020",
+        "photo": "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
+        "pdf": "./pdfdata/reportforE-bike.pdf"
+      },
+      {
+        "id":5,
+        "name": "Re-availing the Input Tax Credit under GST",
+        "published_by": "Shikar Garg",
+        "Published_0n": "04 May,2020",
+        "photo": "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
+        "pdf": "./pdfdata/7.Amending_the_Constitution.pdf"
+      },
+      {
+        "id":6,
+        "name": "Re-availing the Input Tax Credit under GST",
+        "published_by": "Shikar Garg",
+        "Published_0n": "04 May,2020",
+        "photo": "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
+        "pdf": "./pdfdata/7.Amending_the_Constitution.pdf"
+      },
+      {
+        "id":7,
+        "name": "Re-availing the Input Tax Credit under GST",
+        "published_by": "Shikar Garg",
+        "Published_0n": "04 May,2020",
+        "photo": "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
+        "pdf": "./pdfdata/7.Amending_the_Constitution.pdf"
+      }
+      
+    ]

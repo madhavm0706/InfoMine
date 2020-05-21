@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>InfoMine</title>  
+	
+	<!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>    
+    <link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/slicknav.min.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	 
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	
+    <!-- Modernizr JS -->
+    <script src="assets/js/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	
+	<!--favincon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">	
+	<!--Poprup-->
+    <link href="assets/css/popup.css" rel="stylesheet">
+     <script src="assets/js/jquery.min.js"></script>      
+    <script src="assets/js/jquery.bpopup.min.js"></script>
+
+
+    
+</head>
+<body onload="RenderDate()" onload="preloader()">
+    
+    
+    <!-- preloader -->
+    <div id="loader" class="loader">
+    
+            <img style="border-radius: 10px;" width="260px" height="200px" src="./assets/images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg">
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <script> 
+                document.onreadystatechange = function() { 
+                    if (document.readyState !== "complete") { 
+                        document.querySelector( 
+                          "body").style.visibility = "hidden"; 
+                        document.querySelector( 
+                          "#loader").style.visibility = "visible"; 
+                    } else { 
+                        document.querySelector( 
+                          "#loader").style.display = "none"; 
+                        document.querySelector( 
+                          "body").style.visibility = "visible"; 
+                    } 
+                }; 
+            </script>
+    <!-- preloader end -->
+	
+
+
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="top_bar margin-15">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 time">
+                                <div id="date">
+
+                                </div>
+							</div>
+							<div class="col-md-6 col-sm-12 social">
+								<ul>
+									<li><a href="https://www.facebook.com/InfoMineofficial"><i  class="fab fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/contactInfoMine"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/info.mine"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/infomine-0b22431a9"><i class="fab fa-linkedin"></i></a></li>						
+						
+								</ul>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            
+
+
+
+			
+            <!-- imported code -->
+			<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-12 header">
+								<h1 class="logo"><a href="./index.html">InfoMine</a></h1>
+								<p class="tagline">Your Learning Destination</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-nav section_margin">
+					<div class="container-fluid">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-12 main_nav_cover" id="nav">							
+									<ul id="main-menu">
+											<li><a href="./index.html">Home</a></li>
+	
+										<li class="menu-item-has-children"><a href="#">Taxation</a>
+											<ul class="sub-menu">
+												<li><a href="./incometax.html">Income Tax</a></li>
+												<li><a href="./good.html">Goods And Service Tax</a></li>
+											</ul>
+										</li>
+										<li class="menu-item-has-children"><a href="#">Law And Policy</a>
+											<ul class="sub-menu">
+												<li class="menu-item-has-children"><a href="./indian.html">Indian Constitution</a>
+													<li class="menu-item-has-children"><a href="./coperatelaw.html">Corporate Law</a>
+														<li class="menu-item-has-children"><a href="./economics.html">Economics Policies</a>
+	
+													<!-- <ul class="sub-menu">
+														<li><a href="category-list.html">List</a></li>
+														<li><a href="category-grid.html">Grid</a></li>
+														<li><a href="category-masonry.html">Masonry</a></li>
+														<li><a href="category-big.html">Big </a></li>
+													</ul> -->
+												</li>
+												
+												
+											</ul>
+										</li>
+										<li><a href="./other.html">Other</a></li>
+										<li><a href="./contact.html">Contact Us</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+
+                <article >
+
+                        <header >
+                            
+                    <h3 align="center"> Contact Us</h3>
+                        </header>
+                        <div class="container">
+
+                        
+                    
+                        <div class="entry-content">
+                            
+                    <figure align="center" class="wp-block-image size-large"><img data-attachment-id="257" data-permalink="https://infomine.co.in/0b028566-8a41-4e60-a3cd-6b129835b410/" data-orig-file="https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg" data-orig-size="1280,404" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="0b028566-8a41-4e60-a3cd-6b129835b410" data-image-description="" data-medium-file="https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=300" data-large-file="https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=750" src="https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=1024" alt="Contac" class="wp-image-257" srcset="https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=1024 1024w, https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=150 150w, https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=300 300w, https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg?w=768 768w, https://infominecoin.files.wordpress.com/2020/05/0b028566-8a41-4e60-a3cd-6b129835b410.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+                    
+                    
+                    
+                    <p class="has-text-align-justify">You may write queries, relating to articles published, on any of our social media platforms viz., Facebook, Twitter, Instagram or LinkedIn, links of these accounts are readily available on our Home page. You can directly mail your queries at <a href="mailto:contact@infomine.co.in">contact@infomine.co.in</a></p>
+                    
+                    
+                    
+                    <p class="has-text-align-justify">You may suggest us topics to write on. Such topics shall be relating to subjects referred to in &#8220;About us&#8221; section on Home page. <strong>Topic suggestions will be entertained only if received on mail and no revert shall be made for social media suggestions. </strong>Social media is open only for queries and discussions.</p>
+                    
+                    
+                    
+                    <p class="has-text-align-justify">We try to serve you the best..!! Happy reading..!!</p>
+                    
+                    
+                    
+                    <p>You may reach us by filling below information</p>
+                    
+                    
+                    <div id='contact-form-166'>
+                    <form action='https://infomine.co.in/contact-us/#contact-form-166' method='post' class='contact-form commentsblock'>
+                    
+                    
+                    <div class='grunion-field-wrap grunion-field-name-wrap'  >
+                    <label
+                                    for='g166-name'
+                                    class='grunion-field-label name'
+                                    >Name<span>(required)</span></label>
+                    <input
+                                        type='text'
+                                        name='g166-name'
+                                        id='g166-name'
+                                        value=''
+                                        class='name' 
+                                        required aria-required='true'
+                                    />
+                        </div>
+                    
+                    
+                    
+                    <div class='grunion-field-wrap grunion-field-email-wrap'  >
+                    <label
+                                    for='g166-email'
+                                    class='grunion-field-label email'
+                                    >Email<span>(required)</span></label>
+                    <input
+                                        type='email'
+                                        name='g166-email'
+                                        id='g166-email'
+                                        value=''
+                                        class='email' 
+                                        required aria-required='true'
+                                    />
+                        </div>
+                    
+                    
+                    
+                    <div class='grunion-field-wrap grunion-field-telephone-wrap'  >
+                    <label
+                                    for='g166-contact'
+                                    class='grunion-field-label telephone'
+                                    >Contact<span>(required)</span></label>
+                    <input
+                                        type='tel'
+                                        name='g166-contact'
+                                        id='g166-contact'
+                                        value=''
+                                        class='telephone' 
+                                        required aria-required='true'
+                                        
+                                    />
+                        </div>
+                    
+                    
+                    
+                    <div class='grunion-field-wrap grunion-field-textarea-wrap'  >
+                    <label
+                                    for='contact-form-comment-g166-message'
+                                    class='grunion-field-label textarea'
+                                    >Message<span>(required)</span></label>
+                    <textarea
+                                            name='g166-message'
+                                            id='contact-form-comment-g166-message'
+                                            rows='30' class='textarea'  required aria-required='true'></textarea>
+                        </div>
+                    
+                        <p class='contact-submit'>
+                            <button type='submit' class='btn btn-primary'>Submit</button>		<input type='hidden' name='is_block' value='1' />
+                            <input type='hidden' name='contact-form-id' value='166' />
+                            <input type='hidden' name='action' value='grunion-contact-form' />
+                            <input type='hidden' name='contact-form-hash' value='ff6135e7eaeae308004611f5e14d05d2f5907e59' />
+                        </p>
+                    </form>
+                    </div>
+                </div>
+                    
+                        </article><!-- #post-166 -->
+                    
+                            </main><!-- #main -->
+                        
+
+
+
+
+<hr color="black">
+				<div class="container-fluid alith_footer_right_reserved">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-12 bottom-logo">
+                                    <h1 class="logo"><a href="index.html">InfoMine</a></h1>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sx-12">
+                                                    <div class="content">
+                                                            <h6>Organization</h6><hr color="red">
+                                      
+                                                            <ul class="footer-links">
+                                                              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                                                              <li><a href="http://scanfcode.com/contact/">Career</a></li>
+                                                              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Term & Conditions</a></li>
+                                                            </ul>
+                                                          </div>
+                                            </div>
+                                            <div class="col-md-4 col-sx-12">
+                                                    <div class="content">
+                                                            <h6>Quick Links</h6><hr color="red">
+                                      
+                                                            <ul class="footer-links">
+                                                              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                                                              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                                                              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                                                            </ul>
+                                                          </div>
+                                                </div>
+                                                <div class="col-md-4 col-sx-12">
+                                                        <div class="content">
+                                                                <h6>Contact Info</h6><hr color="red">
+                                          
+                                                                <ul class="footer-links">
+                                                                  <li><a href="http://scanfcode.com/about/"><i class="fas fa-phone"></i> &nbsp; +91-9876543210</a></li>
+                                                                  <li><a href="http://scanfcode.com/contact/"><i class="fas fa-envelope"></i> &nbsp;contact@infomine.co.in</a></li>
+                                                                </ul>
+                                                              </div>
+                                                    </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+        
+        
+                                    <div class="tagline social">
+                                        <ul>
+                                            <li class="facebook"><a href="https://www.facebook.com/InfoMineofficial"><i class="fab fa-facebook"></i></a></li>
+                                            <li class="twitter"><a href="https://twitter.com/contactInfoMine"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="google-plus"><a href="https://www.linkedin.com/in/infomine-0b22431a9"><i class="fab fa-linkedin"></i></a></li>
+                                            <li class="instagram"><a href="https://www.instagram.com/info.mine"><i class="fab fa-instagram"></i></a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gototop js-top">
+                        <a href="#" class="js-gotop"><span>Take Me Top</span></a>
+                    </div>
+                </div> <!--page-content-wrapper-->
+        
+                 <!-- ads popup -->
+        
+    
+    
+                
+                <!-- end imported code -->
+                
+                <script src="assets/js/owl.carousel.min.js"></script>
+                <script src="assets/js/jquery.waypoints.min.js"></script>
+                <script src="assets/js/jquery.slicknav.min.js"></script>
+                <script src="assets/js/masonry.pkgd.min.js"></script>
+                <!-- Main -->
+                <script src="assets/js/main.js"></script>
+                <script src="assets/js/smart-sticky.js"></script>
+                <script src="assets/js/theia-sticky-sidebar.js"></script>
+                <script src="./index.js"></script>
+                <script src="./calendar.js"></script>
+            </div> <!--#wrapper-->
+        </body>
+        </html>                           
