@@ -1,58 +1,4 @@
-/***
-Theme Name:		HeWo
-Theme URI:		http://demos.alithemes.com/html/hewo
-Description:	Modern Newspaper HTML Template
-Author:			alithemes.com
-Author URI:		http://alithemes.com
-Version:		1.1
-License:		GNU General Public License v2 or later
-License URI:	http://www.gnu.org/licenses/gpl-2.0.html
-==============================
-TABLE CONTENT
-	HEADER
-		Topbar
-		Logo
-		Navigation
-		Spinner loading
-	FEATURED POST
-		Slider carausel
-		Slider fade
-		Slideshow big
-		Featured Grid
-		Recent post section
-	WIDGETS
-		Custom menu
-		Latest style 1
-		Latest style 2
-		Latest style 3
-		Search form
-		Tags
-		Pagination
-	BOTTOM
-	OFFCANVAS
-	FOOTER
-		Gototop
-		Search popup
-	HOME PAGE
-		Boxed layout
-		Home Grid 1
-	ARCHIVE LAYOUT
-		Archive list
-		Archive grid blance
-		Archive list big
-	POST STYLE
-		Comment
-	PAGES
-		Author page
-	HELPER
-		Row and column gap
-		Line
-==============================
-NOTE
-	Primary color: #e5633f;
-	Body font: 'IBM Plex Serif',serif;
-	Heading font: 'Playfair Display', serif;
-***/
+
 body {
 	background: #ffffff none repeat scroll 0 0;
 	color: #000000;
@@ -88,7 +34,7 @@ a:hover,
 .alith_post_content_big_caption a:hover,
 a.link-active,
 .sticky .alith_post_title a {
-	color: #e5633f;
+	color: #ca2017;
 	text-decoration: none;
 }
 ::selection {
@@ -167,6 +113,10 @@ a.link-active,
 	font-size: 30px;
 	margin-top: 20px;
 }
+.top_bar .social a i:hover {
+	font-size: 40px;
+	margin-top: 20px;
+}
 .social ul {
 	display: inline-block;
 }
@@ -213,6 +163,8 @@ a.link-active,
 }
 /*Navigation*/
 .main_nav_cover {
+	/* background-color: #000;
+	opacity: 0.6; */
 	border-bottom: 3px solid;
 	height: 40px;
 	line-height: 40px;
@@ -221,14 +173,22 @@ a.link-active,
 .main_nav_cover #main-menu {
 	padding: 0;
 	text-align: center;
+	
+	
+	
 }
 .main_nav_cover #main-menu li {
 	line-height: 40px;
 	padding: 0 30px;
 	display: inline-block;
 	position: relative;
+
 }
+
 .main_nav_cover #main-menu li a {
+	
+	
+    
 	font-size: 16px;
 	padding: 0;
 	position: relative !important;
@@ -236,13 +196,21 @@ a.link-active,
 }
 .main_nav_cover #main-menu li ul.sub-menu a {
 	text-transform: none;
+	color: white;
+}
+
+.main_nav_cover #main-menu li ul.sub-menu  li:hover {
+	text-transform: none;
+	background-color: #ca2017;
 }
 ul.sub-menu {
 	display: none;
 	margin-left: 15px;
+
 }
 .main_nav_cover ul.sub-menu {
-	background: #fff none repeat scroll 0 0;
+	background-color: #000;
+	opacity: 0.6;
 	border: medium none;
 	display: none;
 	position: absolute;
@@ -442,12 +410,15 @@ text-align: center;
 	-webkit-animation-play-state: paused;
 }
 
+
+
 @-webkit-keyframes move {
 	0% {
-		margin-top: 0px;
+		
+		transform: translateY(0px);
 	}
 	100% {
-		margin-top: -700px;
+		transform: translateY(-910px);
 		
 	}
 }
@@ -917,7 +888,7 @@ text-transform: uppercase;
 }
 .automaticscroll{
 	height: 600px;
-	overflow: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
 	
 }

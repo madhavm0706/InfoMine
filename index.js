@@ -12,6 +12,7 @@ const articledata = [
   
 {
   id:0,
+  serialno: 1,
   name: "Madhav Maheshwari",
   published_by: "Madhav Maheshwari",
   Published_0n: "15 May,2020",
@@ -21,6 +22,7 @@ const articledata = [
 
 {
     id:1,
+    serialno: 2,
     name: "Amendment to the Indian Constitution",
     published_by: "Rishabh Mittal",
     Published_0n: "05 May,2020",
@@ -29,32 +31,36 @@ const articledata = [
   },
   {
     id:2,
+    serialno: 3,
     name: "Re-availing the Input Tax Credit under GST",
-    published_by: "Shikar Garg",
+    published_by: "Shikhar Garg",
     Published_0n: "04 May,2020",
     photo: "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
-    pdf: "./pdfdata/reportforE-bike.pdf"
+    pdf: "./pdfdata/reavailing_credit_164-1.pdf"
   },
   {
     id:3,
+    serialno: 4,
     name: "Re-availing the Input Tax Credit under GST",
-    published_by: "Shikar Garg",
+    published_by: "Shikhar Garg",
     Published_0n: "04 May,2020",
     photo: "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
-    pdf: "./pdfdata/7.Amending_the_Constitution.pdf"
+    pdf: "./pdfdata/reavailing_credit_164-1.pdf"
   },
   {
     id:4,
+    serialno: 5,
     name: "Re-availing the Input Tax Credit under GST",
-    published_by: "Shikar Garg",
+    published_by: "Shikhar Garg",
     Published_0n: "04 May,2020",
     photo: "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
     pdf: "./pdfdata/7.Amending_the_Constitution.pdf"
   },
   {
     id:5,
+    serialno: 6,
     name: "Re-availing the Input Tax Credit under GST",
-    published_by: "Shikar Garg",
+    published_by: "Shikhar Garg",
     Published_0n: "04 May,2020",
     photo: "./images/WhatsApp Image 2020-05-11 at 12.41.04 AM.jpeg",
     pdf: "./pdfdata/7.Amending_the_Constitution.pdf"
@@ -65,8 +71,17 @@ const articledata = [
 
 
 for(i=0; i<articledata.length; i++){
-     var row= $('<div class="latest_style_1">  <div class="latest_style_1_item"> <span class="item-count vertical-align">'+articledata[i].id+'</span><div class="alith_post_title_small"><a style="color:black;" class="button1" data-id="'+ articledata[i].id+'" >'+articledata[i].name+'</a> <p class="meta"><span>'+articledata[i].Published_0n+'</span> <span>268 views</span></p></div>                                                  <figure class="alith_news_img"><a ><img src="assets/images/thumb-square-1.png" alt=""/></a></figure></div>');
+  var row= $('<div class="latest_style_1">  <div class="latest_style_1_item"> <span class="item-count vertical-align">'+articledata[i].serialno+'</span><div class="alith_post_title_small"><a style="color:black;" class="button1" data-id="'+ articledata[i].id+'" >'+articledata[i].name+'</a> <p class="meta"><span><i class="fas fa-calendar"></i> &nbsp;'+articledata[i].Published_0n+'</span></p><p class="meta"><span><i class="fas fa-user"></i> &nbsp;'+articledata[i].published_by+'</span></p></div> <hr color="#cc2127">                                                 <figure class="alith_news_img"><a ><img src="assets/images/thumb-square-1.png" alt=""/></a></figure></div>');
+
      $("#articles").append(row);
+};
+for(i=0; i<1; i++){
+var row=$('<hr color="#cc2127">');  
+$("#articles").append(row);
+};
+for(i=0; i<6; i++){
+  var row= $('<div class="latest_style_1">  <div class="latest_style_1_item"> <span class="item-count vertical-align">'+articledata[i].serialno+'</span><div class="alith_post_title_small"><a style="color:black;" class="button1" data-id="'+ articledata[i].id+'" >'+articledata[i].name+'</a> <p class="meta"><span><i class="fas fa-calendar"></i> &nbsp;'+articledata[i].Published_0n+'</span></p><p class="meta"><span><i class="fas fa-user"></i> &nbsp;'+articledata[i].published_by+'</span></p></div> <hr color="#cc2127">                                                 <figure class="alith_news_img"><a ><img src="assets/images/thumb-square-1.png" alt=""/></a></figure></div>');
+  $("#articles").append(row);
 };
 
 
