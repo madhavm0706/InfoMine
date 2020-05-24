@@ -91,7 +91,10 @@
                 }, 100);
             }
         } , { offset: '85%' } );
-    };
+	};
+	
+
+	
 	var goToTop = function() {
 			$('.js-gotop').on('click', function(event){			
 			event.preventDefault();
@@ -109,6 +112,13 @@
 			}
 		});	
 	};
+
+
+
+
+
+
+
 	var slickNav = function() {
 		$('#main-menu').slicknav({
 			label: 'MENU',
